@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concert List</title>
+    <title>Add Concert</title>
 </head>
 <body>
-    <h1>Concert List</h1>
-    <!-- TODO: Add list of concerts -->
-    <!-- TODO: show delete link for each concert -->
+    <h1>Add Concert</h1>
+    <!-- add form for adding concert-->
+    <form action="/concerts" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+        
+        <label for="performer">Performer:</label>
+        <input type="text" id="performer" name="performer" required><br><br>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Add Concert">
+    </form>
 </body>
 </html>
